@@ -1,0 +1,24 @@
+Usage: nougat <command> [options] [arguments]
+
+Commands:
+  install <uri>             Install a package from a local path or URL
+  uninstall <id>            Uninstall an installed package
+  repair [id] [bin]         Repair shims of a package, or all packages if omitted
+  commands                  List all registered executable commands
+  list                      List all installed packages
+
+Options:
+  --version, -v             Print build information
+  --help, -h                Show this help message
+
+Install options:
+  --id <id>                 Override the inferred package identifier
+  --bin <path>              Path inside the package containing executables
+
+Examples:
+  nougat install forge-build.zip --id forge --bin binaries
+  nougat install https://example.com/tool.zip --id mytool --bin bin
+  nougat repair forge
+  nougat repair forge binaries
+  nougat uninstall forge
+  nougat repair

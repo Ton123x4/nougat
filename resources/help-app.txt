@@ -1,0 +1,23 @@
+Usage: {executable} [options] [arguments]
+
+Options:
+  --nougat:help                 Show this help message
+  --nougat:id                   Print the package ID of this executable
+  --nougat:where                Print the resolved path of this executable
+  --nougat:set <key> <value>    Set an environment variable for this package
+  --nougat:get <key>            Get the value of an environment variable
+  --nougat:unset <key>          Remove an environment variable
+  --nougat:list                 List all environment variables for this package
+
+Description:
+  Any argument not prefixed with --nougat: is forwarded directly to the
+  underlying executable. Nougat options are intercepted before launch
+  and do not reach the application.
+
+Examples:
+  {executable} --nougat:id
+  {executable} --nougat:set PATH_OVERRIDE /usr/local/bin
+  {executable} --nougat:get PATH_OVERRIDE
+  {executable} --nougat:list
+  {executable} --nougat:where
+  {executable} [arguments...]

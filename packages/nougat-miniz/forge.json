@@ -1,0 +1,16 @@
+{
+    "id": "nougat-miniz",
+    "type": "library",
+    "target": ".internal/nougat-miniz",
+    "defines": {
+        "default": [
+            "_GNU_SOURCE"
+        ]
+    },
+    "includes": [
+        "include"
+    ],
+    "sources": [
+        "src"
+    ]
+}

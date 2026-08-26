@@ -1,0 +1,20 @@
+{
+    "id": "nougat-shim",
+    "type": "executable",
+    "output": "System/chocolate.bin",
+    "sources": [
+        "src"
+    ],
+    "flags": [
+        "-O3"
+    ],
+    "bflags": {
+        "default": [
+            "-fsanitize=address"
+        ]
+    },
+    "requires": [
+        "nougat-system",
+        "stdext"
+    ]
+}

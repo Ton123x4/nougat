@@ -1,0 +1,57 @@
+{
+    "id": "nougat-tool",
+    "type": "executable",
+    "target": "System/nougat",
+    "includes": [
+        "include"
+    ],
+    "sources": [
+        "src",
+        "src/commands"
+    ],
+    "cflags": {
+        "USE_CLANG": [
+            "-std=c++20",
+            "-Wno-c23-extensions"
+        ],
+        "windows": [
+            "-std=c++20",
+            "-Wno-c23-extensions"
+        ],
+        "default": [
+            "-std=c++20"
+        ]
+    },
+    "bflags": {
+        "windows": [
+            "-Xlinker /ignore:4099",
+            "-Xlinker /NODEFAULTLIB:libcmt"
+        ],
+        "posix": [
+            "-fsanitize=address"
+        ]
+    },
+    "requires": [
+        "nougat-miniz",
+        "nougat-system",
+        "stdext",
+        "libcurl",
+        "openssl",
+        "zlib"
+    ],
+    "libraries": {
+        "windows": [
+            "ws2_32",
+            "crypt32",
+            "bcrypt",
+            "advapi32",
+            "ucrt",
+            "msvcrt",
+            "user32",
+            "Iphlpapi"
+        ],
+        "default": [
+            "stdc++"
+        ]
+    }
+}

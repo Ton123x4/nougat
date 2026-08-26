@@ -1,0 +1,56 @@
+{
+    "dependencies": [
+        {
+            "id": "stdext",
+            "includes": [ "include" ],
+            "libpaths": [ "lib" ],
+            "libraries": [ "stdext" ]
+        },
+        {
+            "id": "libcurl",
+            "defines": [ "CURL_STATICLIB" ],
+            "includes": [ "include" ],
+            "libpaths": [ "lib" ],
+            "libraries": {
+                "windows": [ "libcurl" ],
+                "posix": [ "curl" ]
+            }
+        },
+        {
+            "id": "openssl",
+            "includes": [ "include" ],
+            "libpaths": [ "lib" ],
+            "libraries": {
+                "windows": [ "libssl", "libcrypto" ],
+                "posix": [ "ssl", "crypto" ]
+            }
+        },
+        {
+            "id": "zlib",
+            "includes": [ "include" ],
+            "libpaths": [ "lib" ],
+            "libraries": {
+                "windows": [ "zlib" ],
+                "posix": [ "z" ]
+            }
+        }
+    ],
+    "storage": {
+        "compiler": {
+            "posix": {
+                "USE_CLANG": "clang",
+                "default": "gcc"
+            },
+            "default": "clang"
+        }
+    },
+    "packages": [
+        "packages/nougat-miniz",
+        "packages/nougat-shim",
+        "packages/nougat-system",
+        "packages/nougat-tool"
+    ],
+    "resources": [
+        "license.txt"
+    ]
+}
