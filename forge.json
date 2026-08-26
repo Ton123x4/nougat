@@ -51,6 +51,6 @@
         "packages/nougat-tool"
     ],
     "resources": [
-        "license.txt"
+        "LICENSE.txt"
     ]
 }
