@@ -23,7 +23,7 @@ static const char helpMessage[] = {
 };
 
 int HelpMessage(const std::string& filename) {
-    stdext::println("{}", stdext::string::replace(helpMessage, "{executable}", filename));
+    stdext::println("{}", stdext::string::replace_all(helpMessage, "{executable}", filename));
     return EXIT_SUCCESS;
 }
 
