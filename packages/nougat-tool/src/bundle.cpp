@@ -78,8 +78,8 @@ void SetupPackage(
             }
 
             auto entryPath = entry.path();
-            auto fileName = entryPath.filename();
-            auto fileExtension = fileName.extension();
+            auto fileName = entryPath.stem();
+            auto fileExtension = entryPath.extension();
 
 #ifdef _WIN32
             if (!kExecutableExt.contains(fileExtension.string())) {

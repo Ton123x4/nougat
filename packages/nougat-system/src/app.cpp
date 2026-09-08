@@ -136,7 +136,7 @@ int LaunchApplication(const std::string& filename, stdext::arg_parser& parser) {
 }
 
 int LaunchApplication(int argc, char* argv[]) {
-    auto filename = stdext::fs::filename(argv[0]);
+    auto filename = stdext::fs::stem(argv[0]);
     auto parser = stdext::arg_parser(argc, argv);
 
     stdext::init_console();
