@@ -1,5 +1,5 @@
 {
-    "id": "nougat-tool",
+    "name": "nougat-tool",
     "type": "executable",
     "target": "System/nougat",
     "includes": [

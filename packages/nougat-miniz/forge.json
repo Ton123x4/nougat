@@ -1,5 +1,5 @@
 {
-    "id": "nougat-miniz",
+    "name": "nougat-miniz",
     "type": "library",
     "target": ".internal/nougat-miniz",
     "defines": {

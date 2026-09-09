@@ -1,5 +1,5 @@
 {
-    "id": "nougat-system",
+    "name": "nougat-system",
     "type": "shared",
     "target": {
         "windows": "System/nougat",

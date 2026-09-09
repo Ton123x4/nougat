@@ -1,5 +1,5 @@
 {
-    "id": "nougat-shim",
+    "name": "nougat-shim",
     "type": "executable",
     "output": "System/chocolate.bin",
     "sources": [

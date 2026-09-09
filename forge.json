@@ -1,13 +1,13 @@
 {
     "dependencies": [
         {
-            "id": "stdext",
+            "name": "stdext",
             "includes": [ "include" ],
             "libpaths": [ "lib" ],
             "libraries": [ "stdext" ]
         },
         {
-            "id": "libcurl",
+            "name": "libcurl",
             "defines": [ "CURL_STATICLIB" ],
             "includes": [ "include" ],
             "libpaths": [ "lib" ],
@@ -17,7 +17,7 @@
             }
         },
         {
-            "id": "openssl",
+            "name": "openssl",
             "includes": [ "include" ],
             "libpaths": [ "lib" ],
             "libraries": {
@@ -26,7 +26,7 @@
             }
         },
         {
-            "id": "zlib",
+            "name": "zlib",
             "includes": [ "include" ],
             "libpaths": [ "lib" ],
             "libraries": {
