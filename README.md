@@ -1,8 +1,16 @@
 # Nougat
 
-Nougat is a lightweight package manager for CLI tools on Windows and Unix-like operating system.
+Nougat is a lightweight package manager for CLI tools on Windows and Unix-like operating systems.
 
 It installs tools from local archives or URLs and makes their executables available through a shim system. Packages and their configuration remain isolated inside the Nougat installation directory.
+
+## Motivation
+
+Nougat was originally created as a personal project to make it easier to install and manage development tools.
+
+On Windows, setting up tools often involves manually downloading archives or installers, configuring environment variables, and keeping track of where each tool is installed. On Unix-like systems, tools are often easier to centralize through system package managers, but this can also make it difficult to keep project-specific tools isolated from the rest of the system.
+
+Nougat was created to provide a simple way to install and manage CLI tools while keeping each package isolated and self-contained. It was initially developed for personal use, but was later opened as a public project.
 
 ## Installation
 
