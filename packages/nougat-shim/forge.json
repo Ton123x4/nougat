@@ -8,11 +8,6 @@
     "flags": [
         "-O3"
     ],
-    "bflags": {
-        "default": [
-            "-fsanitize=address"
-        ]
-    },
     "requires": [
         "nougat-system",
         "stdext"
