@@ -2,6 +2,7 @@
 
 #include "system.hpp"
 #include "defines.h"
+#include <stdext_sys.h>
 #include <stdext/handler.hpp>
 #include <stdext/memory.hpp>
 #include <stdext/logger.hpp>
@@ -87,7 +88,7 @@ std::string GetBinaryName(const std::string& filename) {
     auto directoryPath = stdext::fs::join_path(nougatBinaries, filename);
     auto binaryName = stdext::fs::absolute(directoryPath);
 
-    return binaryName;
+    return std::format("{}{}", binaryName, STDEXT_EXECUTABLE_EXT);
 }
 
 std::string GetPackageID(const std::string& filename) {
